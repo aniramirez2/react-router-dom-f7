@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -8,7 +8,9 @@ const Layout = () => {
         <NavLink to="/Pagina2"> Ir a la pagina 2 </NavLink>
         <NavLink to="/Pagina1/12">Ir a pagina ID</NavLink>
       </div>
-      <Outlet />
+      <div className="bg-white">
+        <Outlet />
+      </div>
     </div>
   );
 };
